@@ -1,10 +1,22 @@
-// Custom variable overrides go here
+// Custom variable overrides go here; can ovveride bootstrap presets/defaults
 // For options, see node_modules/bootstrap/scss/_variables.scss
 // examples:
 // $body-bg: black;
 // $body-color: white;
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
+
+//this changes a series of elements, has to come before boostrap elements because they're overriding
+$theme-colors: (
+  "primary": #d95700
+); 
+
+$body-bg: #ededed;
+
+.jumbotron {
+  background-color: #ffffff !important;
+  border-top: 3px solid rgb(219, 219, 219);
+}
 
 // Import Bootstrap styles
 @import "../../node_modules/bootstrap/scss/bootstrap";
